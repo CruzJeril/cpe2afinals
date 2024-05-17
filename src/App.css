@@ -1,0 +1,47 @@
+.App {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.CalcContainer {
+  width: 400px;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+  background: linear-gradient(to top, #6a0dad, #4b0082); /* dark purple to darker purple gradient */
+}
+
+.CalcDisplay {
+  border: 1px solid #4b0082; /* darker purple border */
+  margin-bottom: 20px;
+  padding: 5px;
+  height: 50px;
+  font-size: 2em;
+  text-align: right;
+  background-color: #4b0082; /* darker purple background */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Added box-shadow for a subtle raised effect */
+}
+
+.ButtonContainer {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.ButtonContainer > button {
+  justify-content: center;
+  border: 1px solid #000000; /* dark purple border */
+  padding: 7px;
+  color: white;
+  font-size: 2em;
+  background: linear-gradient(to top, #6a0dad, #4b0082); /* dark purple to darker purple gradient */
+  border-radius: 10px;
+  transition: background 0.2s ease; /* Added transition for a smooth hover effect */
+}
+
+.ButtonContainer > button:hover {
+  background: linear-gradient(to top, #4b0082, #6a0dad); /* Reversed gradient on hover */
+  cursor: pointer;
+}
